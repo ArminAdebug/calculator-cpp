@@ -1,39 +1,14 @@
-#include <iostream>
-using namespace std;
+#include <QApplication>
+#include <QWidget>
 
-int main()
+
+int main(int argc, char *argv[])
 {
-	int a = 0;
-	int b = 0;
-	string c = "";
+    QApplication app(argc, argv);
 
-	cout << "enter math:";
+    QMainWindow window;
 
-	cin >> a >> c >> b;
+    window.show();
 
-	if (c == "+")
-	{
-		cout << a + b;
-	}
-	else if (c == "-")
-	{
-		cout << a - b;
-	}
-	else if (c == "*")
-	{
-		cout << a * b;
-	}
-	else if (c == "/")
-	{
-		if (b == 0)
-		{
-			cout << "cannot divide by zero";
-		}
-		else
-		{
-			cout << a / b;
-		}
-	}
-
-	return 0;
+    return app.exec();
 }
