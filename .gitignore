@@ -84,7 +84,6 @@ CMakeLists.txt.user.*
 moc_*.cpp
 moc_*.h
 qrc_*.cpp
-ui_*.h
 
 # Qt generated build directories
 .qtcreator/

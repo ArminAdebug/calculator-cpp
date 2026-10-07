@@ -1,6 +1,7 @@
 #include <QApplication>
 #include <QWidget>
-
+#include ".\source\ui_window.h"
+using namespace Ui;
 
 int main(int argc, char *argv[])
 {
@@ -8,7 +9,8 @@ int main(int argc, char *argv[])
 
     QMainWindow window;
 
-    window.show();
+    MainWindow::Ui_MainWindow ui;
+    ui.setupUi(&window);
 
     return app.exec();
 }
